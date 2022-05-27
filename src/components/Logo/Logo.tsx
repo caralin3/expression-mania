@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { ReactComponent as LogoSvg } from './logo.svg';
+import './Logo.css';
 
 type LogoSize = 'sm' | 'md' | 'lg' | 'xl';
 
