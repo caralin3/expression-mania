@@ -1,0 +1,9 @@
+@import '../../index.css';
+
+.letter-space {
+  @apply bg-blue-cadet border-2 font-bold h-auto py-1 shadow-md text-center text-lg text-white w-7;
+
+  border-color: theme('colors.blue.columbia');
+  border-bottom-color: theme('colors.gray.600');
+  border-right-color: theme('colors.gray.600');
+}
