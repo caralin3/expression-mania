@@ -7,6 +7,11 @@ import { Colors } from './Colors';
 export default {
   title: 'Application/Theme/Colors',
   component: Colors,
+  parameters: {
+    backgrounds: {
+      default: 'white',
+    },
+  },
 } as ComponentMeta<typeof Colors>;
 
 const Template: ComponentStory<typeof Colors> = (args) => <Colors {...args} />;
