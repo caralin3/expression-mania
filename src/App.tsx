@@ -7,6 +7,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import { Counter, Logo } from './components';
 import { store } from './store';
+import theme from './appearance/theme/theme';
 
 function Home() {
   return (
@@ -40,32 +41,36 @@ function About() {
   );
 }
 
+export const ThemeContext = React.createContext(theme);
+
 function App() {
   const persistor = persistStore(store);
 
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <div
-          className={
-            'bg-gray-800 h-screen w-screen overflow-hidden flex items-center justify-center flex-col'
-          }
-        >
-          <a
-            className="text-white"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
+        <ThemeContext.Provider value={theme}>
+          <div
+            className={
+              'bg-gray-800 h-screen w-screen overflow-hidden flex items-center justify-center flex-col'
+            }
           >
-            Learn React
-          </a>
-          <Logo size="lg" />
-          <Counter />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
-          </Routes>
-        </div>
+            <a
+              className="text-white"
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn React
+            </a>
+            <Logo size="lg" />
+            <Counter />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="about" element={<About />} />
+            </Routes>
+          </div>
+        </ThemeContext.Provider>
       </PersistGate>
     </Provider>
   );
