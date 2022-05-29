@@ -2,6 +2,16 @@ import 'tailwindcss/tailwind.css';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
+  a11y: {
+    config: {
+      rules: [
+        {
+          id: 'color-contrast',
+          reviewOnFail: true,
+        },
+      ],
+    },
+  },
   backgrounds: {
     default: 'blue',
     values: [

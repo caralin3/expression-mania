@@ -14,7 +14,7 @@
 }
 
 .btn-primary {
-  @apply bg-blue-steel border-2 shadow-md text-white;
+  @apply bg-blue-cadet border-2 shadow-md text-white;
 
   border-color: theme('colors.blue.columbia');
   border-bottom-color: theme('colors.gray.600');
