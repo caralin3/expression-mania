@@ -5,7 +5,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { LetterSpace } from './LetterSpace';
 
 export default {
-  title: 'Application/Component Library/LetterSpace',
+  title: 'Application/Component Library/Letter Space',
   component: LetterSpace,
   argTypes: {
     letter: { control: 'text' },

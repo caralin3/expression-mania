@@ -1,0 +1,35 @@
+@import '../../index.css';
+
+.btn,
+.btn-md {
+  @apply font-bold py-2 px-3 tracking-wide;
+}
+
+.btn-sm {
+  @apply font-bold py-1 px-2 text-sm tracking-normal;
+}
+
+.btn-lg {
+  @apply font-bold py-2 px-4 text-lg tracking-wide;
+}
+
+.btn-primary {
+  @apply bg-blue-cadet border-2 shadow-md text-white;
+
+  border-color: theme('colors.blue.columbia');
+  border-bottom-color: theme('colors.gray.600');
+  border-right-color: theme('colors.gray.600');
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  @apply shadow-inner;
+
+  border-color: theme('colors.gray.600');
+  border-bottom-color: theme('colors.blue.columbia');
+  border-right-color: theme('colors.blue.columbia');
+}
+
+.btn-primary:focus {
+  outline-color: theme('colors.gray.600');
+}
