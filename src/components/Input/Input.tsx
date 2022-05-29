@@ -1,0 +1,17 @@
+import React from 'react';
+
+import './Input.css';
+
+export interface InputProps {
+  value: string;
+}
+
+export const Input: React.FC<InputProps> = ({ value }) => (
+  <input
+    className="input bg-blue-cadet border-2 border-blue-columbia p-2 
+    placeholder-yellow-pale focus:placeholder-opacity-75 
+    focus:placeholder-white shadow-md text-white w-full"
+    defaultValue={value}
+    placeholder="Enter word or phrase..."
+  />
+);
