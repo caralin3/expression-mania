@@ -12,12 +12,12 @@ module.exports = {
       colors: {
         blue: {
           ...colors.blue,
+          aero: '#d1f4e7',
           blizzard: '#a2eaf2',
           cadet: '#3c737f',
           columbia: '#c7e2eb',
           dark: '#0e2f59',
           prussian: '#142f40',
-          steel: '#587d8e',
         },
         green: {
           ...colors.green,
