@@ -1,11 +1,12 @@
 import React from 'react';
 import { Button } from '../Button';
 import { Input } from '../Input';
+import { Timer } from '../Timer';
 
 import './GuessForm.css';
 
 export interface GuessFormProps {
-  onChangeText: () => void;
+  onChangeText: (e: React.FormEvent<HTMLInputElement>) => void;
   onSubmit: () => void;
   text: string;
 }
@@ -25,8 +26,11 @@ export const GuessForm: React.FC<GuessFormProps> = ({
       <div className="flex-1">
         <Input value={text} onChange={onChangeText} />
       </div>
-      <div className="ml-5">
+      <div className="ml-4">
         <Button label="Submit" />
+      </div>
+      <div className="ml-4">
+        <Timer />
       </div>
     </form>
   );

@@ -33,8 +33,8 @@ export const Timer: React.FC<TimerProps> = ({ duration = 5 }) => {
   }
 
   return (
-    <div className="border-4 border-blue-aero inline-block shadow-inner text-center text-lg text-white">
-      <div className="border-8 border-green-sea px-4 py-2">{time}</div>
+    <div className="border-2 border-blue-aero inline-block shadow-inner text-center text-white">
+      <div className="border-4 border-green-sea px-4 py-1">{time}</div>
     </div>
   );
 };
