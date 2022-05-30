@@ -10,7 +10,7 @@
 }
 
 .btn-lg {
-  @apply font-bold py-2 px-4 text-lg tracking-wide;
+  @apply font-bold py-2 px-4 text-2xl tracking-wide;
 }
 
 .btn-primary {
