@@ -5,7 +5,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { GuessForm } from './GuessForm';
 
 export default {
-  title: 'Application/Component Library/Guess Form',
+  title: 'Application/Component Library/Form',
   component: GuessForm,
   argTypes: {
     onChangeText: { action: 'changed' },
@@ -20,7 +20,7 @@ const Template: ComponentStory<typeof GuessForm> = (args) => (
   <GuessForm {...args} />
 );
 
-export const Default = Template.bind({});
-Default.args = {
+export const GuessingForm = Template.bind({});
+GuessingForm.args = {
   text: '',
 };

@@ -10,7 +10,7 @@ export interface InputProps {
 export const Input: React.FC<InputProps> = ({ onChange, value }) => (
   <input
     className="input bg-blue-cadet border-2 border-blue-columbia p-2 
-    placeholder-yellow-pale focus:placeholder-opacity-75 
+    placeholder-white focus:placeholder-opacity-75 
     focus:placeholder-white shadow-md text-white w-full"
     defaultValue={value}
     placeholder="Enter word or phrase..."
