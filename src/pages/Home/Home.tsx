@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button, GameTitle, Input } from '../../components';
 
 import './Home.css';
@@ -7,11 +7,13 @@ import './Home.css';
 export interface HomeProps {}
 
 export const Home: React.FC<HomeProps> = () => {
+  const navigate = useNavigate();
   const [username, setUsername] = React.useState('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Start', username);
+    navigate('/play');
   };
 
   return (
